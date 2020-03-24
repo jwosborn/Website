@@ -1,6 +1,7 @@
 import React from "react";
 import Beginnings from "./components/beginnings.js";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Button } from "react-bulma-components";
 import "./App.css";
 
 function App() {
@@ -12,10 +13,14 @@ function App() {
             <nav>
               <ul>
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link to="/">
+                    <Button>Home</Button>
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/beginnings">Beginnings</Link>
+                  <Link to="/beginnings">
+                    <Button>Beginnings</Button>
+                  </Link>
                 </li>
               </ul>
             </nav>
