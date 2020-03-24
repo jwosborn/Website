@@ -1,5 +1,5 @@
 import React from "react";
-import Beginnings from "./components/beginnings.js";
+import Beginnings from "./components/Beginnings.js";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Button } from "react-bulma-components";
 import "./App.css";
