@@ -11,11 +11,13 @@ function App() {
     <div className="App">
       <Router>
         <Menu />
-        <Switch>
-          <Route exact path="/" render={() => <Home />} />
-          <Route path="/beginnings" render={() => <Beginnings />} />
-          <Route path="*" render={() => <NotFound />} />
-        </Switch>
+        <div className="switch-wrapper">
+          <Switch>
+            <Route exact path="/" render={() => <Home />} />
+            <Route path="/beginnings" render={() => <Beginnings />} />
+            <Route path="*" render={() => <NotFound />} />
+          </Switch>
+        </div>
       </Router>
     </div>
   );
