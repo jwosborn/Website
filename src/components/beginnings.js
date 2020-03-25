@@ -16,7 +16,6 @@ function Beginnings() {
           </div>
         </div>
       </div>
-      <h1>Beginnings</h1>
     </div>
   );
 }
