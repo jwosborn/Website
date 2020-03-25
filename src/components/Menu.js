@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Menu() {
   return (
-    <nav className="navbar menu is-centered columns">
+    <nav className="navbar menu is-centered">
       <Link to="/">
         <div className="navbar-item column">Home</div>
       </Link>

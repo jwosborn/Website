@@ -4,18 +4,18 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 
 // Set your brand colors
-$white: #f2f2f2;
+$white: #f2e9ec;
 $black: #0d0d0d;
-$brown: #8c4a23;
-$beige: #bf8654;
-$green: #688c4f;
+$beige-light: #d9aa8f;
+$beige-dark: #8c6354;
+$green: #0a2626;
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
 $grey-dark: $black;
-$grey-light: $beige;
+$grey-light: $beige-dark;
 $primary: $green;
-$link: $brown;
+$link: $beige-dark;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
@@ -25,6 +25,7 @@ $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 $navbar-item-color: $white;
+$navbar-item-hover-color: $link;
 
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all.sass";
@@ -46,17 +47,23 @@ $navbar-item-color: $white;
   margin-top: 10px;
   width: 98vw;
   height: 98vh;
+  display: flex;
+  flex-direction: row;
 }
 .font-color-secondary {
-  color: $brown;
+  color: $green;
 }
 .switch-wrapper {
-  background-color: $beige;
+  background-color: $beige-light;
+  width: 87vw;
 }
 .content {
   line-height: 1.5em;
 }
 .menu {
-  background-color: $brown;
-  margin-top: 5px;
+  background-color: $green;
+}
+.title {
+  color: $white;
+  text-align: center;
 }
