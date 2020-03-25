@@ -3,6 +3,9 @@ import React from "react";
 function Home() {
   return (
     <div className="section">
+      <div className="hero">
+        <div className="hero-body title">Welcome</div>
+      </div>
       <div className="content">
         My name is Jeremy Osborn. Welcome to my site! This site serves a
         bio/information center of my life. You'll find information about where I
