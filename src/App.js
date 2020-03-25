@@ -1,39 +1,37 @@
 import React from "react";
 import Beginnings from "./components/Beginnings.js";
+import Home from "./components/Home.js";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Button } from "react-bulma-components";
-import "./App.css";
+import "./App.sass";
 
 function App() {
   return (
     <div className="App">
-      <div className="router-wrapper">
-        <Router>
-          <div className="nav-wrapper">
-            <nav>
-              <ul>
-                <li>
-                  <Link to="/">
-                    <Button>Home</Button>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/beginnings">
-                    <Button>Beginnings</Button>
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
+      <Router>
+        <nav className="navbar">
+          <Link to="/">
+            <div className="navbar-item">Home</div>
+          </Link>
+          <Link to="/beginnings">
+            <div className="navbar-item">Beginnings</div>
+          </Link>{" "}
+          <Link to="/about">
+            <div className="navbar-item">About</div>
+          </Link>{" "}
+          <Link to="/dev">
+            <div className="navbar-item">My Dev Journey</div>
+          </Link>
+        </nav>
 
-          <Switch>
-            <Route path="/"></Route>
-            <Route path="/beginnings">
-              <Beginnings />
-            </Route>
-          </Switch>
-        </Router>
-      </div>
+        <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
+          <Route path="/beginnings">
+            <Beginnings />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
