@@ -4,11 +4,11 @@ function Beginnings() {
   return (
     <div className="box">
       <div className="hero is-small">
-        <span className="hero-body title">BEGINNINGS..</span>
+        <span className="hero-body title">Beginnings</span>
       </div>
       <div className="section">
         <div className="columns">
-          <div className="column">
+          <div className="column is-1">
             <div className="image">IMAGE HERE</div>
           </div>
           <div className="column">
