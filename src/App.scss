@@ -6,15 +6,19 @@
 // Set your brand colors
 $white: #f2e9ec;
 $black: #0d0d0d;
+$brown: #593a2e;
 $beige-light: #d9aa8f;
 $beige-dark: #8c6354;
 $green: #0a2626;
+$blue-dark: #0e1826;
+$blue-light: #4d628c;
+$gray: #777e8c;
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
 $grey-dark: $green;
 $grey-light: $beige-dark;
-$primary: $green;
+$primary: $gray;
 $link: $beige-dark;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
@@ -25,7 +29,7 @@ $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 $menu-item-color: $white;
-$menu-item-hover-color: $green;
+$menu-item-hover-color: $blue-dark;
 
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all.sass";
@@ -44,27 +48,36 @@ $menu-item-hover-color: $green;
 // Custom Classes
 
 .App {
-  margin-top: 10px;
-  width: 98vw;
-  height: 98vh;
+  padding-top: 5px;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: row;
+  background: $blue-light;
+}
+.font-main {
+  color: $white;
 }
 .font-color-secondary {
-  color: $green;
+  color: $blue-dark;
 }
 .switch-wrapper {
-  background-color: $beige-light;
+  background-color: $gray;
   width: 90vw;
 }
 .content {
   line-height: 1.5em;
 }
 .menu {
-  background-color: $green;
-  width: 10vw;
+  background-color: $blue-dark;
+  min-width: 10vw;
+  font-weight: bold;
 }
 .title {
   color: $white;
   text-align: center;
+}
+.hero {
+  background-color: $blue-dark;
+  margin-bottom: 1em;
 }

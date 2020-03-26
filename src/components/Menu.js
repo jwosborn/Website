@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Menu() {
   return (
-    <div className="menu is-centered">
+    <div className="menu">
       <div className="menu-list">
         <Link to="/">
           <div className="menu-item column">Home</div>
