@@ -1,26 +1,27 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Menu() {
+  let path = useLocation();
   return (
-    <div className="menu">
-      <div className="menu-list">
-        <Link to="/">
-          <div className="menu-item column">Home</div>
-        </Link>
-        <Link to="/beginnings">
-          <div className="menu-item column">Beginnings</div>
-        </Link>
-        <Link to="/about">
-          <div className="menu-item column">About Me</div>
-        </Link>
-        <Link to="/dev">
-          <div className="menu-item column">My Dev Journey</div>
-        </Link>{" "}
-        <Link to="/contact">
-          <div className="menu-item column">Contact Me</div>
-        </Link>
-      </div>
+    <div className="tabs menu is-medium is-boxed is-centered is-on-top">
+      <ul>
+        <li className={path.pathname === "/" ? "is-active" : ""}>
+          <Link to="/">Home</Link>
+        </li>
+        <li className={path.pathname === "/beginnings" ? "is-active" : ""}>
+          <Link to="/beginnings">Beginnings</Link>
+        </li>
+        <li className={path.pathname === "/about" ? "is-active" : ""}>
+          <Link to="/about">About Me</Link>
+        </li>
+        <li className={path.pathname === "/dev" ? "is-active" : ""}>
+          <Link to="/dev">My Dev Journey</Link>
+        </li>
+        <li className={path.pathname === "/contact" ? "is-active" : ""}>
+          <Link to="/contact">Contact me</Link>
+        </li>
+      </ul>
     </div>
   );
 }

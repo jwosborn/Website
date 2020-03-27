@@ -9,17 +9,18 @@ $black: #0d0d0d;
 $brown: #593a2e;
 $beige-light: #d9aa8f;
 $beige-dark: #8c6354;
-$green: #0a2626;
+$green: #168c40;
 $blue-dark: #0e1826;
 $blue-light: #4d628c;
 $gray: #777e8c;
+$light-gray: #c1d0d9;
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
-$grey-dark: $green;
-$grey-light: $beige-dark;
+$grey-dark: $white;
+$grey-light: $gray;
 $primary: $gray;
-$link: $beige-dark;
+$link: $white;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
@@ -28,6 +29,8 @@ $body-background-color: $white;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
+$section-padding: 1.5rem 1.5rem;
+$tabs-link-active-color: $blue-light;
 $menu-item-color: $white;
 $menu-item-hover-color: $blue-dark;
 
@@ -38,6 +41,7 @@ $menu-item-hover-color: $blue-dark;
 @import "../node_modules/bulma/sass/elements/container.sass";
 @import "../node_modules/bulma/sass/elements/form.sass";
 @import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/elements/_all.sass";
 @import "../node_modules/bulma/sass/components/_all.sass";
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
@@ -52,26 +56,27 @@ $menu-item-hover-color: $blue-dark;
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background: $blue-light;
 }
+.menu {
+  min-height: 10vh;
+} //hack to fix "beginnings collapse"
+body::-webkit-scrollbar {
+  display: none;
+}
 .font-main {
-  color: $white;
+  color: $white !important;
 }
 .font-color-secondary {
-  color: $blue-dark;
+  color: $beige-dark !important;
 }
 .switch-wrapper {
-  background-color: $gray;
-  width: 90vw;
-}
-.content {
-  line-height: 1.5em;
-}
-.menu {
   background-color: $blue-dark;
-  min-width: 10vw;
-  font-weight: bold;
+  min-width: 90vw;
+}
+.tabs:not(:last-child) {
+  margin-bottom: 0.5em;
 }
 .title {
   color: $white;
@@ -79,5 +84,27 @@ $menu-item-hover-color: $blue-dark;
 }
 .hero {
   background-color: $blue-dark;
-  margin-bottom: 1em;
+  border-radius: 4px;
+}
+.content {
+  padding: 1em;
+  border: 2px dashed $gray;
+}
+.is-on-top {
+  z-index: 1000;
+}
+.relative {
+  position: relative;
+}
+.shadow {
+  position: absolute;
+  top: 4px;
+  left: 34vw;
+}
+.watertower {
+  max-height: 400px;
+  max-width: 300px;
+}
+.underline {
+  border-bottom: 2px solid $green;
 }
