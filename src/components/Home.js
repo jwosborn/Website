@@ -9,12 +9,14 @@ function Home() {
         </span>
       </div>
       <div className="section">
-        <figure className="image intro-img is-128x128">
+        <figure className="image intro-img is-3x2">
           <img
             src={require("../assets/BWIntroPic.jpg")}
             alt="Black and White/Jeremy and Kelsey holding hands."
           />
         </figure>
+      </div>
+      <div className="section">
         <div className="content is-large font-main">
           <p>
             My name is Jeremy Osborn. Welcome to my site! This site serves a
