@@ -60,7 +60,8 @@ $menu-item-hover-color: $blue-dark;
   background: $blue-light;
 }
 .menu {
-  min-height: 10vh;
+  min-height: 6vh;
+  max-height: 6vh;
 } //hack to fix "beginnings collapse"
 body::-webkit-scrollbar {
   display: none;
@@ -89,6 +90,12 @@ body::-webkit-scrollbar {
 .content {
   padding: 1em;
   border: 2px dashed $gray;
+}
+.intro-img {
+  min-height: 65vh;
+  min-width: 97vh;
+  margin: auto;
+  margin-bottom: 1em;
 }
 .is-on-top {
   z-index: 1000;
