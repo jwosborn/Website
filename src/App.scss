@@ -57,7 +57,7 @@ $menu-item-hover-color: $blue-dark;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background: $blue-light;
+  background: $blue-dark;
 }
 .menu {
   min-height: 6vh;
@@ -84,7 +84,6 @@ body::-webkit-scrollbar {
   text-align: center;
 }
 .hero {
-  background-color: $blue-dark;
   border-radius: 4px;
 }
 .content {

@@ -11,8 +11,8 @@ function Home() {
       <div className="section">
         <figure className="image intro-img is-3x2">
           <img
-            src={require("../assets/BWIntroPic.jpg")}
-            alt="Black and White/Jeremy and Kelsey holding hands."
+            src={require("../assets/Banner-Pic.jpg")}
+            alt="Kelsey and Jeremy hug."
           />
         </figure>
       </div>
