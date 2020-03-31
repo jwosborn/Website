@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Childhood from "../components/Beginnings/Childhood";
-import HighSchool from "../components/Beginnings/HighSchool.js";
+import HighSchool from "../components/Beginnings/HighSchool";
+import College from "../components/Beginnings/College";
 
 class Beginnings extends Component {
   state = {
@@ -21,7 +22,7 @@ class Beginnings extends Component {
     if (this.state.i === 0) {
       return "Childhood";
     } else if (this.state.i === 1) {
-      return "HighSchool";
+      return "High School";
     } else if (this.state.i === 2) {
       return "College";
     } else if (this.state.i === 3) {
@@ -37,6 +38,7 @@ class Beginnings extends Component {
         <div className="slide-wrapper">
           {this.state.i === 0 ? <Childhood /> : null}
           {this.state.i === 1 ? <HighSchool /> : null}
+          {this.state.i === 2 ? <College /> : null}
         </div>
         <div className="buttons section columns is-centered">
           {this.state.i >= 1 ? (

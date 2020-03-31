@@ -111,13 +111,23 @@ body::-webkit-scrollbar {
   min-height: 65vh;
 }
 .watertower {
-  max-height: 400px;
-  max-width: 300px;
+  max-height: 200px;
+  max-width: 150px;
+  float: left;
+  margin-right: 1em;
+  margin-top: 3em;
 }
 .senior-pic {
   max-height: 600px;
   max-width: 400px;
   margin-right: 1em !important;
+}
+.crest {
+  float: left;
+  margin-top: 3em;
+  margin-right: 1em;
+  max-height: 150px;
+  max-width: 100px;
 }
 .underline {
   border-bottom: 2px solid $green;
