@@ -31,7 +31,7 @@ class Beginnings extends Component {
   render() {
     return (
       <div>
-        <div className="hero">
+        <div className="hero is-small">
           <span className="hero-body">
             <p className="title underline">{this.viewTitle()}</p>
           </span>
