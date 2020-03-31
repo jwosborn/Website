@@ -17,31 +17,42 @@ class Beginnings extends Component {
       i: this.state.i - 1
     });
   };
+  viewTitle() {
+    if (this.state.i === 0) {
+      return "Childhood";
+    } else if (this.state.i === 1) {
+      return "HighSchool";
+    } else if (this.state.i === 2) {
+      return "College";
+    } else if (this.state.i === 3) {
+      return "Grad School";
+    }
+  }
   render() {
     return (
       <div>
         <div className="hero">
           <span className="hero-body">
-            <p className="title underline">Beginnings</p>
+            <p className="title underline">{this.viewTitle()}</p>
           </span>
         </div>
         {this.state.i === 0 ? <Childhood /> : ""}
         {this.state.i === 1 ? <HighSchool /> : ""}
         <div className="buttons ">
           {this.state.i >= 1 ? (
-            <div className="button  next-view" onClick={this.viewsDecrement}>
+            <div
+              className="button is-primary next-view"
+              onClick={this.viewsDecrement}>
               &lt;-
             </div>
-          ) : (
-            ""
-          )}{" "}
-          {this.state.i <= 3 ? (
-            <div className="button prev-view" onClick={this.viewsIncrement}>
+          ) : null}
+          {this.state.i <= 2 ? (
+            <div
+              className="button is-primary prev-view"
+              onClick={this.viewsIncrement}>
               -&gt;
             </div>
-          ) : (
-            ""
-          )}
+          ) : null}
         </div>
       </div>
     );
