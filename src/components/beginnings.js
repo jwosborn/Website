@@ -31,11 +31,9 @@ class Beginnings extends Component {
   render() {
     return (
       <div>
-        <div className="hero is-small">
-          <span className="hero-body">
-            <p className="title underline">{this.viewTitle()}</p>
-          </span>
-        </div>
+        <span>
+          <p className="title is-1 underline">{this.viewTitle()}</p>
+        </span>
         <div className="slide-wrapper">
           {this.state.i === 0 ? <Childhood /> : null}
           {this.state.i === 1 ? <HighSchool /> : null}
