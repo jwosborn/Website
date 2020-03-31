@@ -36,19 +36,21 @@ class Beginnings extends Component {
             <p className="title underline">{this.viewTitle()}</p>
           </span>
         </div>
-        {this.state.i === 0 ? <Childhood /> : ""}
-        {this.state.i === 1 ? <HighSchool /> : ""}
-        <div className="buttons ">
+        <div className="slide-wrapper">
+          {this.state.i === 0 ? <Childhood /> : null}
+          {this.state.i === 1 ? <HighSchool /> : null}
+        </div>
+        <div className="buttons section columns is-centered">
           {this.state.i >= 1 ? (
             <div
-              className="button is-primary next-view"
+              className="button is-primary column is-1 next-view"
               onClick={this.viewsDecrement}>
               &lt;-
             </div>
           ) : null}
           {this.state.i <= 2 ? (
             <div
-              className="button is-primary prev-view"
+              className="button is-primary column is-1 prev-view"
               onClick={this.viewsIncrement}>
               -&gt;
             </div>

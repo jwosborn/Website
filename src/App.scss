@@ -59,6 +59,9 @@ $menu-item-hover-color: $blue-dark;
   flex-direction: column;
   background: $blue-dark;
 }
+p {
+  padding: 0.5em;
+}
 .menu {
   min-height: 6vh;
   max-height: 6vh;
@@ -104,9 +107,17 @@ body::-webkit-scrollbar {
   top: 4px;
   left: 34vw;
 }
+.slide-wrapper {
+  min-height: 80vh;
+}
 .watertower {
   max-height: 400px;
   max-width: 300px;
+}
+.senior-pic {
+  max-height: 600px;
+  max-width: 400px;
+  margin-right: 1em !important;
 }
 .underline {
   border-bottom: 2px solid $green;

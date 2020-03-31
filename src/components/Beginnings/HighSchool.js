@@ -2,8 +2,14 @@ import React from "react";
 
 function HighSchool() {
   return (
-    <div className="section">
-      <div className="content is-large font-main">
+    <div className="section columns is-gapless">
+      <figure className="image column is-half senior-pic is-2x3">
+        <img
+          src={require("../../assets/Senior_pic.jpg")}
+          alt="Jeremy holding a soccerball in his letterman jacket."
+        />
+      </figure>
+      <div className="content is-large column is-half font-main">
         <p>
           I went to Olive Branch High School. Class of 2008. High School was a
           blast for me. I had a great group of friends and went to a great
