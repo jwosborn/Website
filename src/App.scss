@@ -106,15 +106,9 @@ body::-webkit-scrollbar {
   max-height: 1.5em !important;
   padding: 5px;
 }
-.slide-wrapper {
-  min-height: 67vh;
-  max-height: 67vh;
-  overflow-y: scroll;
-}
+
 .buttons {
   background-color: $blue-dark;
-  max-width: 45vw;
-  max-height: 5em;
   margin: 0 auto !important;
   padding: 1em 0;
 }
