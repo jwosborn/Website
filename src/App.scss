@@ -102,13 +102,21 @@ body::-webkit-scrollbar {
 .relative {
   position: relative;
 }
-.shadow {
-  position: absolute;
-  top: 4px;
-  left: 34vw;
+.banner {
+  max-height: 1.5em !important;
+  padding: 5px;
 }
 .slide-wrapper {
-  min-height: 65vh;
+  min-height: 67vh;
+  max-height: 67vh;
+  overflow-y: scroll;
+}
+.buttons {
+  background-color: $blue-dark;
+  max-width: 45vw;
+  max-height: 5em;
+  margin: 0 auto !important;
+  padding: 1em 0;
 }
 .watertower {
   max-height: 200px;
@@ -116,6 +124,7 @@ body::-webkit-scrollbar {
   float: left;
   margin-right: 1em;
   margin-top: 3em;
+  margin-left: -1.5em;
 }
 .senior-pic {
   max-height: 600px;
@@ -126,9 +135,21 @@ body::-webkit-scrollbar {
   float: left;
   margin-top: 3em;
   margin-right: 1em;
+  margin-left: -1.5em;
   max-height: 150px;
   max-width: 100px;
+  padding: 1em;
+  background-color: #fff;
 }
+.soccer-pic {
+  float: right;
+  margin-top: 0.5em;
+  margin-right: -1.5em;
+  margin-left: 1em;
+  max-height: 250px;
+  max-width: 100px;
+}
+
 .underline {
   border-bottom: 2px solid $green;
 }

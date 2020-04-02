@@ -33,14 +33,14 @@ class Beginnings extends Component {
     return (
       <div>
         <span>
-          <p className="title is-1 underline">{this.viewTitle()}</p>
+          <p className="title banner is-1 underline">{this.viewTitle()}</p>
         </span>
         <div className="slide-wrapper">
           {this.state.i === 0 ? <Childhood /> : null}
           {this.state.i === 1 ? <HighSchool /> : null}
           {this.state.i === 2 ? <College /> : null}
         </div>
-        <div className="buttons section columns is-centered">
+        <div className="buttons columns is-centered">
           {this.state.i >= 1 ? (
             <div
               className="button is-primary column is-1 next-view"
