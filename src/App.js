@@ -1,8 +1,9 @@
 import React from "react";
 import Beginnings from "./components/Beginnings.js";
-import Home from "./components/Home.js";
-import Menu from "./components/Menu.js";
-import NotFound from "./components/NotFound.js";
+import Home from "./components/Home";
+import About from "./components/About";
+import Menu from "./components/Menu";
+import NotFound from "./components/NotFound";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.scss";
 
@@ -15,6 +16,7 @@ function App() {
           <Switch>
             <Route exact path="/" render={() => <Home />} />
             <Route path="/beginnings" render={() => <Beginnings />} />
+            <Route path="/about" render={() => <About />} />
             <Route path="*" render={() => <NotFound />} />
           </Switch>
         </div>
