@@ -10,10 +10,10 @@ function Menu() {
           <Link to="/">Home</Link>
         </li>
         <li className={path === "/beginnings" ? "is-active" : ""}>
-          <Link to="/beginnings">Beginnings</Link>
+          <Link to="/beginnings">Where I Came From</Link>
         </li>
         <li className={path === "/about" ? "is-active" : ""}>
-          <Link to="/about">About Me</Link>
+          <Link to="/about">Where I Am</Link>
         </li>
         <li className={path === "/dev" ? "is-active" : ""}>
           <Link to="/dev">My Dev Journey</Link>

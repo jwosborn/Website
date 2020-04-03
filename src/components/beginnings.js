@@ -2,10 +2,11 @@ import React, { Component } from "react";
 import Childhood from "../components/Beginnings/Childhood";
 import HighSchool from "../components/Beginnings/HighSchool";
 import College from "../components/Beginnings/College";
+import GradSchol from "../components/Beginnings/GradSchool";
 
 class Beginnings extends Component {
   state = {
-    i: 0
+    i: 3
   };
 
   viewsIncrement = () => {
@@ -58,7 +59,7 @@ class Beginnings extends Component {
             <div
               className="button is-primary is-2 column prev-view"
               onClick={this.viewsDecrement}>
-              &lt;-{this.prevView()}
+              &lt;- {this.prevView()}
             </div>
           ) : null}
           <div
@@ -79,6 +80,7 @@ class Beginnings extends Component {
           {this.state.i === 0 ? <Childhood /> : null}
           {this.state.i === 1 ? <HighSchool /> : null}
           {this.state.i === 2 ? <College /> : null}
+          {this.state.i === 3 ? <GradSchol /> : null}
         </div>
       </div>
     );
