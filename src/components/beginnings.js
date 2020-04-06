@@ -1,22 +1,22 @@
 import React, { Component } from "react";
-import Childhood from "../components/Beginnings/Childhood";
-import HighSchool from "../components/Beginnings/HighSchool";
-import College from "../components/Beginnings/College";
-import GradSchol from "../components/Beginnings/GradSchool";
+import Childhood from "./Beginnings/Childhood";
+import HighSchool from "./Beginnings/HighSchool";
+import College from "./Beginnings/College";
+import GradSchol from "./Beginnings/GradSchool";
 
 class Beginnings extends Component {
   state = {
-    i: 3
+    i: 0,
   };
 
   viewsIncrement = () => {
     this.setState({
-      i: this.state.i + 1
+      i: this.state.i + 1,
     });
   };
   viewsDecrement = () => {
     this.setState({
-      i: this.state.i - 1
+      i: this.state.i - 1,
     });
   };
   viewTitle() {
