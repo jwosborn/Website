@@ -1,5 +1,5 @@
 import React from "react";
-import Beginnings from "./components/Beginnings.js";
+import Beginnings from "./components/Beginnings";
 import Home from "./components/Home";
 import About from "./components/About";
 import Menu from "./components/Menu";
