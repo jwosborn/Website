@@ -228,7 +228,7 @@ body::-webkit-scrollbar {
   }
 
   50% {
-    transform: translate(700%, 150%);
+    transform: translate(65vw, 25vh);
   }
   100% {
     transform: translate(0, 0);
@@ -239,7 +239,7 @@ body::-webkit-scrollbar {
     transform: translate(0, 0);
   }
   50% {
-    transform: translate(-700%, 225%);
+    transform: translate(-65vw, 25vh);
   }
   100% {
     transform: translate(0, 0);
@@ -250,7 +250,7 @@ body::-webkit-scrollbar {
     transform: translate(0, 0);
   }
   50% {
-    transform: translate(700%, 0);
+    transform: translate(65vw, 0);
   }
   100% {
     transform: translate(0, 0);
@@ -261,7 +261,7 @@ body::-webkit-scrollbar {
     transform: translate(0, 0);
   }
   50% {
-    transform: translate(-700%, 0);
+    transform: translate(-65vw, 0);
   }
   100% {
     transform: translate(0, 0);
@@ -272,7 +272,7 @@ body::-webkit-scrollbar {
     transform: translate(0, 0);
   }
   50% {
-    transform: translate(700%, -300%);
+    transform: translate(65vw, -25vh);
   }
   100% {
     transform: translate(0, 0);
@@ -283,7 +283,7 @@ body::-webkit-scrollbar {
     transform: translate(0, 0);
   }
   50% {
-    transform: translate(-700%, -250%);
+    transform: translate(-65vw, -25vh);
   }
   100% {
     transform: translate(0, 0);

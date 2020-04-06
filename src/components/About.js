@@ -75,8 +75,9 @@ function About() {
           Above you'll find some logos and pictures of some of my favorite
           things! I have been a huge Arsenal fan since middle school. I was born
           an Ohio State fan. I LOVE both Harry Potter and Lord of the Rings (as
-          any good nerd does). I also thorougly enjoy watching Formula 1 and
-          playing OverWatch.
+          any good nerd does). I also thorougly enjoy watching Formula 1,
+          playing Overwatch and a good cup of coffee. Enjoy watching them bounce
+          around!
         </p>
       </div>
     </div>
