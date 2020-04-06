@@ -3,7 +3,7 @@ import React from "react";
 function About() {
   return (
     <div>
-      <div className="section is-small title underline">
+      <div className="title is-1 underline">
         <p>About Me</p>
       </div>
       <div className="logos columns is-centered">
