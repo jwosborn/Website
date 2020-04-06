@@ -167,9 +167,125 @@ body::-webkit-scrollbar {
   margin-right: 1em;
   margin-bottom: 1em;
 }
+.logos {
+  background-color: $black;
+  min-width: 88vw;
+  min-height: 75vh;
+}
+.logo {
+  max-height: 150px;
+  max-width: 150px;
+  margin: 0.5em;
+  border-radius: 50%;
+}
+.logo-right {
+  margin-left: 400px;
+}
+.bounce-top {
+  animation-name: logo-bounce-top;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+.bounce-top-reverse {
+  animation-name: logo-bounce-top-reverse;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+.bounce-middle {
+  animation-name: logo-bounce-middle;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+.bounce-middle-reverse {
+  animation-name: logo-bounce-middle-reverse;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+.bounce-bottom {
+  animation-name: logo-bounce-bottom;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-delay: 3.5s;
+}
+.bounce-bottom-reverse {
+  animation-name: logo-bounce-bottom-reverse;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-delay: 3.5s;
+}
 .margin-fix {
   margin: 1em auto !important;
 }
 .underline {
   border-bottom: 2px solid $green;
+}
+
+@keyframes logo-bounce-top {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(700%, 150%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes logo-bounce-top-reverse {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-700%, 225%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes logo-bounce-middle {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(700%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes logo-bounce-middle-reverse {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-700%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes logo-bounce-bottom {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(700%, -300%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes logo-bounce-bottom-reverse {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-700%, -250%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
