@@ -167,6 +167,12 @@ body::-webkit-scrollbar {
   margin-right: 1em;
   margin-bottom: 1em;
 }
+.bulma {
+  max-width: 200px;
+  border-radius: 75px;
+  margin-bottom: 2em;
+}
+//About Me logo Craziness
 .logos {
   background-color: $black;
   min-width: 88vw;
