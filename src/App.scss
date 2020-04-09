@@ -172,6 +172,14 @@ body::-webkit-scrollbar {
   border-radius: 75px;
   margin-bottom: 2em;
 }
+.social-logo {
+  max-height: 150px;
+  min-height: 150px;
+  max-width: 200px;
+  border-radius: 30px;
+  margin: auto 1em;
+  background-color: #fff;
+}
 //About Me logo Craziness
 .logos {
   background-color: $black;
