@@ -69,10 +69,10 @@ function Dev() {
         <p>
           I still have SO much to learn, but isn't that the point? There is no
           "ceiling" for software development. There will ALWAYS be problems to
-          solve. and that excites me! Problem solving is one of the best parts
+          solve. And that excites me! Problem solving is one of the best parts
           of Software Engineering. You have the power to automate something that
-          makes someone else's (or even your own) life easier or their work more
-          efficient. What an opportunity that is!{" "}
+          makes someone else's life easier (or even your own). What an
+          opportunity that is!
         </p>
       </div>
     </div>

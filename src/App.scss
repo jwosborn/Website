@@ -30,7 +30,7 @@ $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 $section-padding: 1.5rem 1.5rem;
-$tabs-link-active-color: $blue-light;
+$tabs-link-active-color: $blue-dark;
 $menu-item-color: $white;
 $menu-item-hover-color: $blue-dark;
 
@@ -171,6 +171,14 @@ body::-webkit-scrollbar {
   max-width: 200px;
   border-radius: 75px;
   margin-bottom: 2em;
+}
+.social-logo {
+  max-height: 150px;
+  min-height: 150px;
+  max-width: 200px;
+  border-radius: 30px;
+  margin: auto 1em;
+  background-color: #fff;
 }
 //About Me logo Craziness
 .logos {
