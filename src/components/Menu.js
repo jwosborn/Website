@@ -4,22 +4,33 @@ import { Link, useLocation } from "react-router-dom";
 function Menu() {
   let path = useLocation().pathname;
   return (
-    <div className="tabs menu is-medium is-boxed is-centered is-on-top">
-      <ul>
+    <div className="menu is-medium is-on-top">
+      <ul className="menu-list">
         <li className={path === "/" ? "is-active" : ""}>
-          <Link to="/">Home</Link>
+          <Link to="/">
+            <i className="fas fa-home fa-lg"></i>
+          </Link>
         </li>{" "}
         <li className={path === "/about" ? "is-active" : ""}>
-          <Link to="/about">Where I Am</Link>
+          <Link to="/about">
+            <i class="fas fa-play fa-lg"></i>
+          </Link>
         </li>
         <li className={path === "/beginnings" ? "is-active" : ""}>
-          <Link to="/beginnings">Where I Came From</Link>
+          <Link to="/beginnings">
+            <i class="fas fa-fast-backward fa-lg"></i>
+          </Link>
         </li>
         <li className={path === "/dev" ? "is-active" : ""}>
-          <Link to="/dev">My Dev Journey</Link>
+          <Link to="/dev">
+            <i class="fas fa-fast-forward fa-lg"></i>
+            <br />
+          </Link>
         </li>
         <li className={path === "/contact" ? "is-active" : ""}>
-          <Link to="/contact">Contact me</Link>
+          <Link to="/contact">
+            <i class="fas fa-phone-alt fa-lg"></i>
+          </Link>
         </li>
       </ul>
     </div>
