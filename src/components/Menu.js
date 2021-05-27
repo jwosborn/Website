@@ -13,23 +13,23 @@ function Menu() {
         </li>{" "}
         <li className={path === "/about" ? "is-active" : ""}>
           <Link to="/about">
-            <i class="fas fa-play fa-lg"></i>
+            <i className="fas fa-play fa-lg"></i>
           </Link>
         </li>
         <li className={path === "/beginnings" ? "is-active" : ""}>
           <Link to="/beginnings">
-            <i class="fas fa-fast-backward fa-lg"></i>
+            <i className="fas fa-fast-backward fa-lg"></i>
           </Link>
         </li>
         <li className={path === "/dev" ? "is-active" : ""}>
           <Link to="/dev">
-            <i class="fas fa-fast-forward fa-lg"></i>
+            <i className="fas fa-fast-forward fa-lg"></i>
             <br />
           </Link>
         </li>
         <li className={path === "/contact" ? "is-active" : ""}>
           <Link to="/contact">
-            <i class="fas fa-phone-alt fa-lg"></i>
+            <i className="fas fa-phone-alt fa-lg"></i>
           </Link>
         </li>
       </ul>

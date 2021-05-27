@@ -21,6 +21,7 @@ $grey-dark: $white;
 $grey-light: $gray;
 $primary: $gray;
 $link: $white;
+$link-hover: $black;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
@@ -106,10 +107,11 @@ body::-webkit-scrollbar {
 .banner-text {
   position: absolute;
   height: 100%;
+  width: 35vw;
   top: 0;
-  right: 12%;
+  right: 5%;
   padding: 1em;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 .is-on-top {
   z-index: 1000;
@@ -119,6 +121,14 @@ body::-webkit-scrollbar {
 }
 .menu-list > li {
   padding: 5px 0;
+}
+.husband {
+  margin-top: 2em;
+}
+.husband-photo-caption {
+  position: absolute;
+  top: 5%;
+  right: 10%;
 }
 .buttons {
   background-color: $blue-dark;
