@@ -20,7 +20,7 @@ function Home() {
             </li>
             <li className="title is-4">
               <a href="#father">
-                <i className="fas fa-baby"></i> Father
+                <i className="fas fa-baby-carriage"></i> Father
               </a>
             </li>
             <li className="title is-4">
@@ -54,7 +54,7 @@ function Home() {
       </div>
       <div id="father" className="section title is-5 font-main">
         <span className="father">
-          <i className="fas fa-baby fa-lg"></i> FATHER
+          <i className="fas fa-baby-carriage fa-lg"></i> FATHER
         </span>
         <hr />
         Kelsey and I are expecting our first child in December 2021!
