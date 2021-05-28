@@ -67,6 +67,7 @@ p {
 .menu {
   height: 100vh;
   padding-top: 25vh;
+  max-width: 2.7em;
 }
 // hack to fix "beginnings collapse"
 body::-webkit-scrollbar {

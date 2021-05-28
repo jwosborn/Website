@@ -1,37 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+
+const NavItem = ({ title, path, location, icon }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <Link
+      className={path === { location } ? "is-active" : ""}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      to={location}>
+      {!isHovered ? (
+        <i className={`fas ${icon} fa-lg`}></i>
+      ) : (
+        <i style={{ fontSize: ".5em" }}>{title}</i>
+      )}
+    </Link>
+  );
+};
 
 function Menu() {
   let path = useLocation().pathname;
   return (
     <div className="menu is-medium is-on-top">
       <ul className="menu-list">
-        <li className={path === "/" ? "is-active" : ""}>
-          <Link to="/">
-            <i className="fas fa-home fa-lg"></i>
-          </Link>
-        </li>{" "}
-        <li className={path === "/about" ? "is-active" : ""}>
-          <Link to="/about">
-            <i className="fas fa-play fa-lg"></i>
-          </Link>
-        </li>
-        <li className={path === "/beginnings" ? "is-active" : ""}>
-          <Link to="/beginnings">
-            <i className="fas fa-fast-backward fa-lg"></i>
-          </Link>
-        </li>
-        <li className={path === "/dev" ? "is-active" : ""}>
-          <Link to="/dev">
-            <i className="fas fa-fast-forward fa-lg"></i>
-            <br />
-          </Link>
-        </li>
-        <li className={path === "/contact" ? "is-active" : ""}>
-          <Link to="/contact">
-            <i className="fas fa-phone-alt fa-lg"></i>
-          </Link>
-        </li>
+        <NavItem title="Home" path={path} location="/" icon="fa-home" />
+        <NavItem title="About" path={path} location="/about" icon="fa-play" />
+        <NavItem
+          title="Past"
+          path={path}
+          location="/beginnings"
+          icon="fa-fast-backward"
+        />
+        <NavItem
+          title="Career"
+          path={path}
+          location="/dev"
+          icon="fa-fast-forward"
+        />
+        <NavItem
+          title="Contact"
+          path={path}
+          location="/contact"
+          icon="fa-phone-alt"
+        />
       </ul>
     </div>
   );
