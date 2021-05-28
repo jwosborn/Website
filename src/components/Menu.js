@@ -11,7 +11,7 @@ const NavItem = ({ title, path, location, icon }) => {
       onMouseLeave={() => setIsHovered(false)}
       to={location}>
       {!isHovered ? (
-        <i className={`fas ${icon} fa-lg`}></i>
+        <i className={`fas ${icon}`}></i>
       ) : (
         <i style={{ fontSize: ".5em" }}>{title}</i>
       )}
