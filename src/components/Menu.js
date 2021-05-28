@@ -6,7 +6,7 @@ const NavItem = ({ title, path, location, icon }) => {
 
   return (
     <Link
-      className={path === { location } ? "is-active" : ""}
+      className={path === { location } ? "item is-active" : "item"}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       to={location}>
