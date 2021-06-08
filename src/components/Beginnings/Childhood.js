@@ -20,8 +20,7 @@ function Childhood() {
           younger than I am. My parents stayed married and provided well for my
           sister and I. My dad worked for Mercedes-Benz his entire life and my
           mom floated between staying at home with us and working Customer
-          Service for various businesses. While we were certainly not rich, we
-          had little financial issues.
+          Service for various businesses.
         </p>
       </div>
     </div>

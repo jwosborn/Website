@@ -10,9 +10,9 @@ function Home() {
         />
         <div className="banner-text">
           <div className="title-buffer"></div>
-          <h1 className="title is-1 font-main">Jeremy Osborn</h1>
+          <h1 className="banner-title title is-1 font-main">Jeremy Osborn</h1>
           <hr />
-          <ul>
+          <ul className="banner-list">
             <li className="title is-4">
               <a href="#husband">
                 <i className="fas fa-ring"></i> Husband

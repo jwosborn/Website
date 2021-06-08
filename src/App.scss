@@ -100,10 +100,35 @@ body::-webkit-scrollbar {
 .intro-img {
   margin: auto;
   position: relative;
+  background: $blue-dark;
+  min-width: 90vw;
+  min-height: 95vh;
 }
 .banner {
   max-height: 1.5em !important;
   padding: 5px;
+}
+.banner-title {
+  position: relative;
+  width: max-content;
+  margin: auto;
+}
+//blinking cursor
+.banner-title::after {
+  content: "";
+  width: 5px;
+  height: 1em;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  bottom: 0;
+  animation: blink 750ms infinite;
+  background: black;
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
 }
 .title-buffer {
   min-height: 30vh;
@@ -116,6 +141,17 @@ body::-webkit-scrollbar {
   right: 5%;
   padding: 1em;
   background-color: rgba(0, 0, 0, 0.05);
+}
+.banner-list > li {
+  animation: appear-bottom 2s forwards;
+}
+@keyframes appear-bottom {
+  0% {
+    transform: translate(0, 17em);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 .is-on-top {
   z-index: 1000;
